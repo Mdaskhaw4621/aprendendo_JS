@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Primeiro Programa...</title>
+
+    <style>
+        body{
+            background-color: rgba(162, 0, 255, 0.404);
+            color: white;
+            font-family: Arial;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!!!</h1>
+    <p>To suavão</p>
+
+    <script>
+        var planeta = prompt('Diga-me qual o planeta que estamos?'); //janela com campo de texto 
+        
+        if(planeta == 'Terra'){
+            alert(`Exato, estamos no planeta ${planeta}`); //concatenação
+        }
+        else{
+            alert(`Não estamos no planeta ${planeta}` ); //concatenação
+            alert('Estamos no planeta Terra');
+        }
+    </script>
+</body>
+</html>

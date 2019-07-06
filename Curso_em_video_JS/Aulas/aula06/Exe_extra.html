@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*crie um script que receba o nome de uma pessoa e seu salário
+        *coverta o sálario para dolar e exiba o nome e o salário 
+        *com a fortação da moeda correspondente.
+        */
+
+        var nome = prompt('Por favor informe seu nome:')
+        var sal_real = prompt('Agora informe seu sálario:')
+
+        sal_real = sal_real.replace(',','.'); //trata a virgula para ponto
+
+        var cot_at_dolar= 3.81 //cotação atual do dolar
+        var sal_dolar = sal_real * cot_at_dolar //conversão real para dolar
+       
+        sal_real = parseFloat(sal_real).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        sal_dolar = parseFloat(sal_dolar).toLocaleString('pt-BR', {style: 'currency', currency:'USD'})
+
+
+        document.writeln(`${nome} seu salário de ${sal_real} em dólar é de ${sal_dolar}`)
+
+    </script>
+</body>
+</html>
